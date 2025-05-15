@@ -1,41 +1,47 @@
-# Social-Media-app
-Social Media App Description
-Development Background:
-In the second semester of my CS program, I developed a social media application using the Simple and Fast Multimedia Library (SFML) and Object-Oriented Programming (OOP) principles in C++. This project showcases my ability to combine multimedia handling with robust software design practices.
+# 🌐 Social Media App (C++ with SFML GUI)
 
-Key Features:
+This is a fully interactive **Social Media Application** built using **C++** and **SFML (Simple and Fast Multimedia Library)**. It features a graphical interface with real-time input handling, and simulates a complete user experience — from registration and login to viewing posts and interacting with others — using a well-structured **object-oriented design**.
 
-User Interface:
+---
 
-The app features a custom graphical user interface (GUI) built with SFML, offering a visually appealing and intuitive layout. The interface includes components such as buttons, text boxes, and icons, designed to enhance user interaction.
-User Accounts:
+## 💡 Object-Oriented Programming Concepts Used
 
-Users can create accounts, log in, and manage their profiles. The account management system includes functionalities for editing personal information, updating profile pictures, and changing passwords.
-Friend Management:
+| OOP Concept      | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **Encapsulation** | Data members are private; access is through public setters/getters          |
+| **Inheritance**   | UI elements and managers inherit base functionality                        |
+| **Polymorphism**  | Virtual functions allow dynamic UI rendering (e.g., rendering different screens) |
+| **Abstraction**   | Complex logic hidden behind class interfaces (e.g., User, Post, Feed)       |
+| **Association**   | Users can view posts but are not owners of all of them                     |
+| **Aggregation**   | A User has Posts, but Posts can exist independently (e.g., stored in feed) |
+| **Composition**   | A Profile *owns* its UI components — they cease to exist when the Profile is destroyed |
+| **Modular Design**| Header-based separation of concerns and single-responsibility classes       |
 
-The app allows users to send, accept, and decline friend requests. Friends are displayed in a dedicated section, where users can view their profiles, status updates, and mutual friends.
-Post and Feed System:
+---
 
-Users can create posts that appear in a chronological feed. Each post can include text and images, with the ability to like and comment. The feed dynamically updates, showing posts from friends and popular content across the platform.
-Messaging:
+## 🎯 Key Features
 
-A real-time messaging system lets users communicate privately with friends. The messaging interface includes chat windows, message timestamps, and support for emojis.
-Notifications:
+- 👤 User registration & login system
+- 📝 Create and delete posts
+- 📜 View posts in personal or global feeds
+- 👁️ View profiles of other users
+- 🖱️ Interactive GUI with mouse & keyboard support
+- 💾 Persistent storage using file I/O
+- 💡 Built completely with C++ classes and no STL containers
+- 🧱 Clean code structure using `.h` and `.cpp` separation
 
-The app features a notification system that alerts users to new friend requests, messages, likes, and comments. Notifications are displayed in real-time, ensuring users stay engaged with ongoing activities.
-Search Functionality:
+---
 
-Users can search for other users, posts, and hashtags, making it easy to find and connect with friends or discover trending content.
-Security and Privacy:
+## 🧱 Technologies Used
 
-Implementing basic security measures, the app ensures that user data is securely stored and managed. Privacy settings allow users to control who can view their posts and send them friend requests.
-Object-Oriented Design:
+| Technology | Role                                   |
+|------------|----------------------------------------|
+| C++        | Core logic and OOP architecture        |
+| SFML       | GUI, event handling, rendering         |
+| File I/O   | Persistent storage of users and posts  |
+| Header Files | Modularization and reusable components |
 
-I structured the application using OOP principles, with classes representing core entities such as Users, Posts, Friends, and Messages. Inheritance, encapsulation, and polymorphism are employed to create a modular and maintainable codebase.
-Technologies Used:
+---
 
-SFML (Simple and Fast Multimedia Library): Used for handling graphics, window management, and event handling, providing a smooth and interactive user experience.
-C++ with OOP: I developed the app in C++, leveraging OOP concepts to structure the program efficiently and promote code reuse.
-Learning Outcome:
-Through the development of this social media app, I gained practical experience in software development, GUI design, and the application of OOP principles in a real-world project. This project reflects my ability to tackle complex challenges and create functional, user-oriented software.
+## 🗂️ File Structure
 
